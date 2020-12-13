@@ -51,7 +51,8 @@ function valueWork() {
 
 
 function renderToDom() {
-    document.getElementById('employeeList').innerHTML = ""
+    //document.getElementById('employeeList').innerHTML = ""
+    $('#employeeList').html("");
     for (var key in allEmployees) {
         var value = allEmployees[key];
         let employeeRow = $(`
