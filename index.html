@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery-3.5.1.js"></script>
+  <script src="action.js"></script>
+  <title>Week1 Weekend Project</title>
+</head>
+<body>
+  <header class="jumbotron">
+    <h1>Salary Calculator</h1>
+  </header>
+  <main id="bodyContainer" class="container">
+
+<!-- INPUT SECTION WITH SUBMIT BUTTON     -->
+    <div class="row">
+      <div class="col">
+        <input id="firstIn" type="text" class="form-control" placeholder="First name" aria-label="First name" value="test">
+      </div>
+      <div class="col">
+        <input id="lastIn" type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+      </div>
+      <div class="col">
+        <input id="idIn" type="number" class="form-control" placeholder="ID" aria-label="ID">
+      </div>
+      <div class="col">
+        <input id="titleIn" type="text" class="form-control" placeholder="Title" aria-label="Title">
+      </div>
+      <div class="col">
+        <input id="salaryIn" type="number" class="form-control" placeholder="Salary" aria-label="Salary" value="34534">
+      </div>
+    </div>
+    
+    <div class="text-end">
+      <button id="submitButton" type="submit" class="btn btn-outline-success btn-sm" aria-placeholder="submit">Submit</button>
+    </div>
+
+    <h2 class="employee">Employees</h2>
+
+    <!-- TABLE SECTION FOR EMPLOYEE INFORMATION -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">ID</th>
+          <th scope="col">Title</th>
+          <th scope="col">Annual Salary</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <!-- // this table is filled via jQuery and appending elements into it -->
+      <tbody id="employeeList">
+      </tbody>
+    </table>
+    
+    <h2 id="total">TOTAL MONTHLY COST: $<span id="totalCost"></span></h2>
+   
+  </main>
+  
+  
+</body>
+</html>
